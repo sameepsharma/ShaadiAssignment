@@ -56,6 +56,7 @@ class MatchesRepo(
             scope.launch(Dispatchers.IO) {
                 val dbData = matchesDao.getSavedMatches()
                 scope.launch(Dispatchers.Main) {
+
                     if (dbData.isNullOrEmpty())
                         resultCallback.onError("No data found!!")
                     else
