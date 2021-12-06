@@ -1,0 +1,3 @@
+rootProject.name = "ShaadiAssignment"
+include ':app'
+include ':deckview'
